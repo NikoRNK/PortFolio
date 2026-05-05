@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Rankovic Nikola</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="./img/villeta.png" type="image/x-icon">
+<style>
+  .timeline-item-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 6px;
+  }
+  .company-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    object-fit: contain;
+    background: #fff;
+    border: 1px solid #DDE3EF;
+    padding: 4px;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(30,77,183,.08);
+  }
+  .company-logo-placeholder {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #EBF0FB;
+    border: 1px solid #DDE3EF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #1E4DB7;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(30,77,183,.08);
+    letter-spacing: -0.5px;
+  }
+  .timeline-item-title-text { flex: 1; }
+</style>
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+    <main>
+        <aside class="sidebar " data-sidebar>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="./img/moi.jpg" alt="avatar" width="80">
+                </figure>
+
+                <div class="info-content">
+                    <h1 class="name" title="Rankovic Nikola">Rankovic Nikola</h1>
+                    <p class="title">Etudiant en cyber-sécurité</p>
+                </div>
+
+                <button class="info-more-btn" data-sidebar-btn>
+                    <span>Mes coordonnées</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+            </div>
+
+            <div class="sidebar-info-more">
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">E-mail</p>
+
+                            <a href="mailto:nikolarankovitsh@gmail.com" class="contact-link">nikolarankovitsh@gmail.com</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="construct-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Année scolaire</p>
+
+                            <time datetime="2025-09">BUT3 R&T Cybersécurité → Mastère EFFREI BAC+5</time>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Localisation</p>
+
+                            <address>Paris 20e, Île de France</address>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="separator"></div>
+
+                <ul class="social-list">
+                    <li class="social-item"><a href="https://www.linkedin.com/in/rankovicnikola" class="social-link" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    <li class="social-item"><a href="https://github.com/NikoRNK" class="social-link" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-github"></ion-icon></a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="main-content">
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item"><button class="navbar-link active" data-nav-link data-page="about">À propos</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link data-page="resume">Parcours</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link data-page="portfolio">Portfolio</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link data-page="contact">Contact</button></li>
+                </ul>
+            </nav>
+
+            <article class="about active" data-page="about">
+                <header>
+                    <h2 class="h2 article-title">À propos</h2>
+                </header>
+
+                <section class="about-text">
+                    <p>Étudiant en cybersécurité, je suis passionné par la protection des infrastructures réseaux et systèmes. Actuellement en stage d'Administrateur Réseau, Cybersécurité Offensive et Défensive chez Alan Allman Associates (jusqu'en septembre), je mets en pratique mes compétences techniques en conditions réelles tout en contribuant à la sécurisation des environnements informatiques.</p>
+                    <p>En 3ᵉ année de BUT Réseaux et Télécommunications, spécialité cybersécurité à Sorbonne Paris Nord, j'intègre prochainement EFFREI en Mastère spécialisé en cybersécurité. Mon objectif à moyen terme : obtenir l'OSCP et évoluer vers le pentesting et les opérations Red Team.</p>
+                </section>
+
+                <section class="service">
+                    <h3 class="h3 service-title">Mes domaines d'activité</h3>
+
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <ion-icon name="cube-sharp" size="large" width="40" class="yellow2 big-icon"></ion-icon>
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Cyber-Sécurité</h4>
+                                <p class="service-item-text">Protection et sécurisation des infrastructures réseaux et systèmes.</p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <ion-icon name="finger-print-sharp" size="large" width="40" class="yellow2 big-icon"></ion-icon>
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Pentesting & Audit</h4>
+                                <p class="service-item-text">Identification des vulnérabilités et mise en place de solutions pour renforcer la sécurité informatique.</p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <ion-icon name="hardware-chip-sharp" size="large" width="40" class="yellow2 big-icon"></ion-icon>
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Réseaux & Systèmes</h4>
+                                <p class="service-item-text">Conception, déploiement et gestion de réseaux complexes avec supervision avancée.</p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <ion-icon name="invert-mode-sharp" size="large" width="40" class="yellow2 big-icon"></ion-icon>
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Forensic & Analyse</h4>
+                                <p class="service-item-text">Investigation numérique approfondie grâce à des outils spécialisés pour les enquêtes informatiques.</p>
+                            </div>
+                        </li>
+
+                          <li class="service-item">
+                            <div class="service-icon-box">
+                                <ion-icon name="cloud-done-sharp" size="large" width="40" class="yellow2 big-icon"></ion-icon>
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Virtualisation & Cloud</h4>
+                                <p class="service-item-text">Gestion et optimisation des environnements virtualisés et intégration des solutions cloud (AWS, Azure).</p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <ion-icon name="library-sharp" size="large" width="40" class="yellow2 big-icon"></ion-icon>
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Développement</h4>
+                                <p class="service-item-text">Création d’outils automatisés, de sites web et d’applications sécurisées, avec maîtrise de nombreux langages et technologies pour le développement</p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </section>
+
+                <section class="testimonials">
+                    <h3 class="h3 testimonials-title">Recommendations</h3>
+
+                    <ul class="testimonials-list has-scrollbar">
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="https://i.postimg.cc/mD0N6CdW/Design-sans-titre-removebg-preview.png" alt="avatar" data-testimonials-avatar width="60">
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>KOVACEVIC Zorica</h4>
+                                <p class="testimonials-subtitle">Directrice de L'APCIS</p>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>"Nikola s’est pleinement investi dans l’ensemble de ses missions, qu’il a menées avec sérieux, détermination et rigueur. Il a démontré une grande persévérance face aux difficultés, n’abandonnant jamais avant d’avoir trouvé une solution, quelle que soit la complexité du problème rencontré. Il a su faire preuve d’une forte capacité d’adaptation, d’un esprit d’initiative, et a constamment apporté des idées pertinentes à l’équipe. Son leadership naturel, son sens du devoir, ainsi que sa capacité à fédérer et à travailler en synergie ont été particulièrement remarquables. Au-delà de ses compétences techniques solides, Nikola est une personne respectueuse, serviable, fiable et profondément engagée. Il connaît et applique avec justesse les codes du monde professionnel, et fait preuve d’un excellent relationnel, que ce soit avec ses pairs ou les encadrants."</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="testimonials-list has-scrollbar">
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="https://i.postimg.cc/sDGBf1V1/Design-sans-titre-1-removebg-preview.png" alt="avatar" data-testimonials-avatar width="60">
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>PAVLICEVIC Darko</h4>
+                                <p class="testimonials-subtitle">Expert poste de travail virtualisation chez Econocom</p>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>"Nikola a démontré une grande motivation et un réel intérêt pour les technologies de l'information. Il a travaillé sur plusieurs Applications, notamment la virtualisation etc ... , et a montré une grande capacité à apprendre et à s'adapter aux nouvelles technologies. Nikola a également fait preuve d'une excellente attitude professionnelle, d'une grande autonomie et d'une bonne capacité à travailler en équipe. Ses compétences techniques et ses qualités personnelles ont été appréciées par l'ensemble de l'équipe. Je suis convaincu que Nikola du candidat serait un excellent candidat pour un poste en alternance en cybersécurité. Il possède les compétences, la motivation et les qualités nécessaires pour réussir dans ce rôle. "</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+
+                <div class="modal-container " data-modal-container>
+                    <div class="overlay " data-overlay></div>
+
+                    <section class="testimonials-modal">
+                        <button class="modal-close-btn" data-modal-close-btn><ion-icon name="close-outline"></ion-icon></button>
+
+                        <div class="modal-img-wrapper">
+                            <figure class="modal-avatar-box">
+                                <img src="https://i.postimg.cc/zGDHfn3G/avatar-1.png" alt="Daniel Lewis" width="80" data-modal-img>
+                            </figure>
+
+                            <img src="https://i.postimg.cc/mZ00RwX7/icon-quote.png" alt="quote icon">
+                        </div>
+
+                        <div class="modal-content">
+                            <h4 class="h3 modal-title" data-modal-title>Daniel Lewis</h4>
+                            <time datetime="2023-06-14">―――――――――――――</time>
+
+                            <div class="modal-text" data-modal-text>
+                                <p>depend du msg</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+            </article>
+            
+            <article class="resume " data-page="resume">
+                <header>
+                    <h2 class="h2 article-title">Parcours</h2>
+                </header>
+
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+
+                        <h3 class="h3">Formation</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <div class="timeline-item-header">
+                                <img class="company-logo" src="./img/efrei.png" alt="EFREI" title="EFREI">
+                                <h4 class="h4 timeline-item-title timeline-item-title-text">Mastère – Cybersécurité</h4>
+                            </div>
+                            <span>2026 – 2028</span>
+                            <p class="yellow2">EFFREI Paris</p>
+                            <p class="timeline-text">Intégration en Mastère Cybersécurité à EFFREI. Formation orientée vers le pentesting, la sécurité offensive et défensive, et la gouvernance SI.</p>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-item-header">
+                                <img class="company-logo" src="./img/villeta.png" alt="IUTV" title="IUTV">
+                                <h4 class="h4 timeline-item-title timeline-item-title-text">BUT Réseaux et Télécommunications – option Cybersécurité</h4>
+                            </div>
+                            <span>2022 – 2026</span>
+                            <p class="yellow2">Sorbonne Paris Nord – IUT Villetaneuse</p>
+                            <p class="timeline-text">Formation axée sur la sécurisation des infrastructures réseaux et systèmes. Compétences acquises :</p>
+    <ul class ="timeline-text">
+      <li class ="timeline-text">- Protocoles réseau : TCP/UDP, ICMP, RIP, DHCP, DNS, NAT, VLAN, MPLS, SSH, SMTP</li>
+      <li class ="timeline-text">- Déploiement de réseaux physiques et logiques avec GNS3, Marionnet, Cisco Packet Tracer</li>
+      <li class ="timeline-text">- Gestion des services LDAP/AD, IMAP/POP3, FreeRADIUS, supervision avec Nagios et Zabbix</li>
+      <li class ="timeline-text">- Virtualisation et Cloud : vSphere HA, DRS, vMotion, vCenter, HyperV, NSX, AWS, Azure</li>
+      <li class ="timeline-text">- Sécurité offensive/défensive : IDS/IPS, SIEM Wazuh, forensic, pentesting, VoIP/MITM, captive portal pfSense</li>
+    </ul>
+                        </li>
+
+                        <li class="timeline-item">
+                            <div class="timeline-item-header">
+                                <img class="company-logo" src="./img/ravel.jpg" alt="Maurice Ravel" title="Maurice Ravel">
+                                <h4 class="h4 timeline-item-title timeline-item-title-text">Maurice Ravel</h4>
+                            </div>
+                            <span>2019 – 2022</span>
+                            <p class="yellow2">Lycée général et technique – Maurice Ravel</p>
+                            <p class="timeline-text">Baccalauréat général avec options Physique-Chimie, SVT et Mathématiques.</p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+
+                        <h3 class="h3">Expérience</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+
+                        <li class="timeline-item">
+                            <div class="timeline-item-header">
+                                <img class="company-logo" src="./img/3a.jpg" alt="3A" title="3A">
+                                <h4 class="h4 timeline-item-title timeline-item-title-text">Stagiaire Administrateur Réseau – Cybersécurité Offensive & Défensive – Alan Allman Associates</h4>
+                            </div>
+                            <span>Avril 2026 – Septembre 2026</span>
+                            <p class="timeline-text">Surveillance et sécurisation du système d'information du cabinet de conseil. Cybersécurité défensive : détection, analyse et remontée d'incidents. Tests de sécurité encadrés, identification de vulnérabilités et contrôles de configuration. Administration des équipements réseau (switchs, routeurs, pare-feu, VPN), gestion des accès et des droits utilisateurs, contrôles de conformité. Veille technique sur les menaces et vulnérabilités, rédaction de documentation technique.</p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <div class="timeline-item-header">
+                                <img class="company-logo" src="./img/im.jpg" alt="IMNETWORK" title="IMNETWORK">
+                                <h4 class="h4 timeline-item-title timeline-item-title-text">Alternant Réseaux & Systèmes - IMNETWORK</h4>
+                            </div>
+                            <span>Septembre 2025 – Mars 2026</span>
+                            <p class="timeline-text">Alternance en administration réseaux et systèmes. Participation à la gestion et à la maintenance des infrastructures réseau, configuration d'équipements et support technique.</p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <div class="timeline-item-header">
+                                <img class="company-logo" src="./img/econocom.png" alt="Econocom" title="Econocom">
+                                <h4 class="h4 timeline-item-title timeline-item-title-text">Stagiaire Virtualisation - Econocom</h4>
+                            </div>
+                            <span>Juillet – Août 2026</span>
+                            <p class="timeline-text">Déploiement et configuration de 15+ machines virtuelles sur vSphere et Hyper-V, gestion des snapshots, optimisation des ressources de clusters, mise en place de solutions de haute disponibilité (HA, DRS, vMotion).</p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <div class="timeline-item-header">
+                                <img class="company-logo" src="./img/apcis.png" alt="Apcis" title="Apcis">
+                                <h4 class="h4 timeline-item-title timeline-item-title-text">Stagiaire Réseau & Systèmes - APCIS</h4>
+                            </div>
+                            <span>Mai – Juin 2026</span>
+                            <p class="timeline-text">Configuration de 4 serveurs Linux (LDAP, IMAP, MPLS), supervision via Nagios et Zabbix. Acquisition de compétences pratiques en administration système et supervision des réseaux.</p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <div class="timeline-item-header">
+                                <img class="company-logo" src="./img/dojo.png" alt="DOJO" title="DOJO">
+                                <h4 class="h4 timeline-item-title timeline-item-title-text">Assistant Professeur Arts Martiaux</h4>
+                            </div>
+                            <span>2020 – 2024</span>
+                            <p class="timeline-text">Encadrement et formation de 20+ jeunes. Transmission de valeurs, développement de patience, rigueur, esprit d'équipe et pédagogie.</p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <div class="timeline-item-header">
+                                <img class="company-logo" src="./img/btp.jpg" alt="BTP" title="BTP">
+                                <h4 class="h4 timeline-item-title timeline-item-title-text">BTP & Chantier</h4>
+                            </div>
+                            <span>2018 – 2024</span>
+                            <p class="timeline-text">Travail en équipe sur chantiers, planification des tâches et découverte des contraintes du monde professionnel.</p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="skill">
+                    <h3 class="h3 skills-title">Langues</h3>
+                    <ul class="skills-list content-card">
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Français</h5>
+                                <data value="100">100%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 100%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Serbe</h5>
+                                <data value="100">100%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 100%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Anglais – B2 <span style="font-weight:400;font-size:11px;opacity:0.7;">(TOEIC 850/990)</span></h5>
+                                <data value="80">80%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 80%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="skill">
+                    <h3 class="h3 skills-title">Hard Skills</h3>
+                    <ul class="skills-list content-card">
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Pentesting & Audit</h5>
+                                <data value="85">85%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 85%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Réseaux - Systèmes</h5>
+                                <data value="80">80%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 80%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Supervision & Sécurité Réseau</h5>
+                                <data value="75">75%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 75%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Développement strict et web</h5>
+                                <data value="80">80%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 80%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Développement d'applications (Web & mobiles sécurisées)</h5>
+                                <data value="77">77%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 77%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Forensic</h5>
+                                <data value="62">62%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 62%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Gestion de bases de données</h5>
+                                <data value="74">74%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 74%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Langages & protocoles</h5>
+                                <data value="85">85%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 85%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Soft skills : Esprit d'équipe, Rigueur, Patience, Leadership</h5>
+                                <data value="89">89%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 89%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+
+                <section class="skill">
+                    <h3 class="h3 skills-title">Certifications</h3>
+                    <ul class="certifications-list content-card" style="list-style:none;padding:20px;display:flex;flex-direction:column;gap:14px;">
+                        <li>
+                            <a href="https://www.linkedin.com/in/rankovicnikola/" target="_blank" rel="noopener noreferrer" class="cert-item" style="display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit;padding:10px 14px;border-radius:10px;transition:background .2s;background:var(--bg-gradient-onyx);">
+                                <ion-icon name="shield-checkmark-outline" style="font-size:24px;color:var(--yellow2);flex-shrink:0;"></ion-icon>
+                                <div>
+                                    <p style="font-weight:600;font-size:14px;color:var(--white2);">Cisco Networking Technician</p>
+                                    <p style="font-size:12px;color:var(--light-gray);">Career Path – Cisco</p>
+                                </div>
+                                <ion-icon name="open-outline" style="margin-left:auto;font-size:16px;color:var(--light-gray70);"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.root-me.org/NikoRNK" target="_blank" rel="noopener noreferrer" class="cert-item" style="display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit;padding:10px 14px;border-radius:10px;transition:background .2s;background:var(--bg-gradient-onyx);">
+                                <ion-icon name="terminal-outline" style="font-size:24px;color:var(--yellow2);flex-shrink:0;"></ion-icon>
+                                <div>
+                                    <p style="font-weight:600;font-size:14px;color:var(--white2);">Root-Me PRO</p>
+                                    <p style="font-size:12px;color:var(--light-gray);">13 challenges web validés</p>
+                                </div>
+                                <ion-icon name="open-outline" style="margin-left:auto;font-size:16px;color:var(--light-gray70);"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+
+            <article class="portfolio " data-page="portfolio">
+                <header>
+                    <h2 class="h2 article-title">Portfolio</h2>
+                </header>
+
+                <section class="projects">
+                    <ul class="filter-list">
+                        <li class="filter-item"><button class="active" data-filter-btn>Tous</button></li>
+                        <li class="filter-item"><button data-filter-btn data-page="Rapports">Rapports</button></li>
+                        <li class="filter-item"><button data-filter-btn data-page="Applications">Applications</button></li>
+                    </ul>
+
+                    <div class="filter-select-box">
+                        <button class="filter-select " data-select>
+                            <div class="select-value" data-select-value>Catégorie</div>
+
+                            <div class="select-icon">
+                                <ion-icon name="chevron-down"></ion-icon>
+                            </div>
+                        </button>
+
+                        <ul class="select-list">
+                            <li class="select-item"><button data-select-item>Tous</button></li>
+                            <li class="select-item"><button data-select-item data-page="Rapports">Rapports</button></li>
+                            <li class="select-item"><button data-select-item data-page="Applications">Applications</button></li>
+                        </ul>
+                    </div>
+
+                    <ul class="project-list">
+                        <li class="project-item active" data-filter-item data-category="Rapports">
+                            <a href="https://docs.google.com/document/d/17zarKPk8u2cr1BFanAfLDVtzDSK3W_MRKfsKvaJgAdQ/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="https://i.postimg.cc/zG64ZzJC/image-2025-08-10-215815869.png" alt="finance" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Rapport de stage</h3>
+                                <p class="project-category">Association APCIS</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="Rapports">
+                            <a href="https://docs.google.com/document/d/1DgAK0rC_E9Ik6vBgn9lC8PyMrDRiTuZM/edit?usp=sharing&ouid=116418037052137239797&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="https://i.postimg.cc/hPqjgnGq/image-2025-08-10-215612493.png" alt="orizon" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Rapport technique</h3>
+                                <p class="project-category">Projet d'intrustion</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="Rapports">
+                            <a href="https://docs.google.com/document/d/1v8SzBVJeuPmXXwcQnDg8x_0ztFC0KBS8/edit?usp=sharing&ouid=116418037052137239797&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="https://i.postimg.cc/T3BmrS92/image-2025-08-10-220942283.png" alt="fundo" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Rapport Technique</h3>
+                                <p class="project-category">Projet attaque MITM</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="Applications">
+                            <a href="https://github.com/NikoRNK/botTELEGRM" target="_blank" rel="noopener noreferrer">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="https://i.postimg.cc/Jzq1cBmT/image-2025-08-10-221257837.png" alt="brawlhalla" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Bot Telegram</h3>
+                                <p class="project-category">Assistant trading</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="Applications">
+                            <a href="https://github.com/NikoRNK/SAEbnq" target="_blank" rel="noopener noreferrer">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="https://i.postimg.cc/R0y2cM3s/image-2025-08-10-221454153.png" alt="dsm." loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Application communicative</h3>
+                                <p class="project-category">Plateforme tchat professeur étudiants</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="Rapports">
+                            <a href="https://docs.google.com/document/d/18TgPXu0bDh13kEF1WC9Gzj8DJkKKLL3mEkbtZXKGr7k/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="https://i.postimg.cc/6Qk18YSF/image-2025-08-10-221708843.png" alt="metaspark" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Rapport technique</h3>
+                                <p class="project-category">Projet concevoir un réseau</p>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+
+            <article class="contact " data-page="contact">
+                <header>
+                    <h2 class="h2 article-title">Contact</h2>
+                </header>
+
+                <section class="mapbox" data-mapbox>
+                    <figure>
+                        <iframe src=""
+                         width="400" height="300" loading="lazy"></iframe>
+                    </figure>
+                </section>
+
+                <section class="contact-form">
+                    <h3 class="h3 form-title">Formulaire de contact</h3>
+
+                    <form action="mailto:nikolarankovitsh@gmail.com" method="get" enctype="text/plain" class="form" data-form>
+                        <div class="input-wrapper">
+                            <input type="text" name="Nom & Prénom" class="form-input" placeholder="Nom & prénom" required data-form-input>
+                            <input type="email" name="email" class="form-input" placeholder="Addresse Email" required data-form-input>
+                        </div>
+
+                        <textarea name="message" class="form-input" placeholder="Votre message" required data-form-input=""></textarea>
+
+                        <button class="form-btn" type="submit" disabled data-form-btn>
+                            <ion-icon name="paper-plane"></ion-icon>
+                            <span>Envoyer le message !</span>
+                        </button>
+                    </form>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
